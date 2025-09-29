@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СЕТЬ TOP IT COLLEGE | Набор Оперативников</title>
+    <!-- Подключение Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Настройка шрифта и киберпанк-стиля -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            /* Гритти-шрифт */
+            background-color: #1a1a2e;
+            /* Темный фон */
+            color: #e0e0e0;
+            /* Светлый текст */
+        }
+
+        /* Главный цвет: Кибер-Фиолетовый (Неон) */
+        .color-primary {
+            background-color: #ff00ff;
+        }
+
+        /* Прямой неон */
+        .text-neon {
+            color: #ff00ff;
+            text-shadow: 0 0 5px rgba(255, 0, 255, 0.7);
+        }
+
+        /* Акцентный цвет: Бирюзовый/Голубой */
+        .text-accent {
+            color: #00ffff;
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+        }
+
+        .btn-cyborg {
+            background-color: #ff00ff;
+            box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+            border: 1px solid #00ffff;
+            color: #1a1a2e;
+            /* Цвет текста для лучшей читаемости */
+        }
+
+        .btn-cyborg:hover {
+            background-color: #00ffff;
+            color: #1a1a2e;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+            transform: scale(1.05);
+        }
+
+        .form-container {
+            position: relative;
+            height: 950px;
+            overflow: hidden;
+            border: 2px dashed #00ffff;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+
+        ::-webkit-scrollbar-button {
+            width: 0px;
+            height: 0px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: transparent;
+            border: 0px none;
+            border-radius: 0px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb:active {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+            border: 0px none;
+            border-radius: 0px;
+        }
+
+        ::-webkit-scrollbar-track:hover {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-track:active {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-corner {
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- 1. Навигационная панель -->
+    <nav class="bg-gray-900 shadow-xl sticky top-0 z-10 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-2xl font-bold text-accent">TOP IT COLLEGE</span>
+                    <span class="ml-2 text-xl font-light text-neon">::СЕТЬ::</span>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#cells"
+                        class="text-gray-400 hover:text-neon px-3 py-2 rounded-md text-sm font-medium transition duration-150">Отряды</a>
+                    <a href="#contracts"
+                        class="text-gray-400 hover:text-neon px-3 py-2 rounded-md text-sm font-medium transition duration-150">Контракты</a>
+                    <a href="#intake"
+                        class="ml-4 btn-cyborg text-gray-900 px-4 py-2 rounded-sm text-sm font-bold transition duration-300">
+                        ЗАГРУЗИТЬ ДОСЬЕ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Героический раздел (Hero Section) -->
+    <header class="bg-gray-800 text-white py-20 md:py-32 shadow-2xl">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-wider">
+                СЕТЬ НУЖДАЕТСЯ В <span class="text-neon">ТВОИХ НАВЫКАХ</span>
+                <br>И ТВОЕЙ <span class="text-accent">ИНИЦИАТИВЕ</span>.
+            </h1>
+            <p class="text-xl md:text-2xl opacity-90 mb-8 font-light">
+                Мы — Киберпанк Ковбои. Наши Контракты = Твое Портфолио. Просто выбери свой Отряд.
+            </p>
+            <a href="#intake"
+                class="inline-block btn-cyborg text-gray-900 font-bold text-lg py-3 px-8 rounded-sm shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out uppercase">
+                ПРОТОКОЛ: СТАРТ МИССИИ
+            </a>
+        </div>
+    </header>
+
+    <!-- 3. Раздел "Спец-Отряды" - 4 Группы для сплочения (Упрощено) -->
+    <section id="cells" class="py-16 md:py-24 max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-neon uppercase">
+            Наши 4 Спец-Отряда
+        </h2>
+        <p class="text-center text-lg text-gray-400 mb-12 max-w-4xl mx-auto font-light">
+            Каждый Отряд имеет свою специализацию. Выбирай свой главный коллектив.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Отряд 1: КОД & ТЕХНОЛОГИИ -->
+            <div
+                class="p-6 rounded-xl bg-gray-900 shadow-inner border border-indigo-600 hover:border-neon transition duration-300">
+                <span class="text-4xl block mb-2 text-indigo-400">💻</span>
+                <h3 class="text-xl font-bold mb-1 text-accent">ОТРЯД: КОД & ТЕХНОЛОГИИ</h3>
+                <p class="text-sm text-gray-500">Задачи: GameDev, создание IT-инструментов, клубы по кодингу.</p>
+            </div>
+
+            <!-- Отряд 2: ВИЗУАЛ & АРТ -->
+            <div
+                class="p-6 rounded-xl bg-gray-900 shadow-inner border border-pink-600 hover:border-neon transition duration-300">
+                <span class="text-4xl block mb-2 text-pink-400">🎨</span>
+                <h3 class="text-xl font-bold mb-1 text-accent">ОТРЯД: ВИЗУАЛ & АРТ</h3>
+                <p class="text-sm text-gray-500">Задачи: Графический дизайн, UI/UX, фото/видео, создание арт-объектов.
+                </p>
+            </div>
+
+            <!-- Отряд 3: МЕДИА & КОНТЕНТ -->
+            <div
+                class="p-6 rounded-xl bg-gray-900 shadow-inner border border-cyan-600 hover:border-neon transition duration-300">
+                <span class="text-4xl block mb-2 text-cyan-400">📣</span>
+                <h3 class="text-xl font-bold mb-1 text-accent">ОТРЯД: МЕДИА & КОНТЕНТ</h3>
+                <p class="text-sm text-gray-500">Задачи: Ведение соцсетей (СММ), создание Дайджеста, подкасты, тексты.
+                </p>
+            </div>
+
+            <!-- Отряд 4: СОБЫТИЯ & ИВЕНТЫ -->
+            <div
+                class="p-6 rounded-xl bg-gray-900 shadow-inner border border-yellow-600 hover:border-neon transition duration-300">
+                <span class="text-4xl block mb-2 text-yellow-400">🏆</span>
+                <h3 class="text-xl font-bold mb-1 text-accent">ОТРЯД: СОБЫТИЯ & ИВЕНТЫ</h3>
+                <p class="text-sm text-gray-500">Задачи: Организация турниров, вечеров игр, конференций и встреч.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Раздел "Контракты" - Множество проектов (Свобода выбора) -->
+    <section id="contracts" class="py-16 bg-gray-900 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-neon uppercase">
+                Твои Хобби-Контракты
+            </h2>
+            <p class="text-center text-lg text-gray-400 mb-12 max-w-4xl mx-auto font-light">
+                Выбери из списка или создай свой. Это твои личные проекты для Портфолио.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Проекты -->
+                <div
+                    class="p-3 bg-indigo-900/50 rounded-sm shadow-lg text-sm font-medium text-indigo-300 border border-indigo-800">
+                    КОНТРАКТ: GameDev-Джем</div>
+                <div
+                    class="p-3 bg-pink-900/50 rounded-sm shadow-lg text-sm font-medium text-pink-300 border border-pink-800">
+                    КОНТРАКТ: UI/UX Хакинг</div>
+                <div
+                    class="p-3 bg-cyan-900/50 rounded-sm shadow-lg text-sm font-medium text-cyan-300 border border-cyan-800">
+                    КОНТРАКТ: Видео-Дайджест</div>
+                <div
+                    class="p-3 bg-yellow-900/50 rounded-sm shadow-lg text-sm font-medium text-yellow-300 border border-yellow-800">
+                    КОНТРАКТ: Киберспорт-Сбор</div>
+                <div
+                    class="p-3 bg-indigo-900/50 rounded-sm shadow-lg text-sm font-medium text-indigo-300 border border-indigo-800">
+                    КОНТРАКТ: Чат-Бот</div>
+
+                <div
+                    class="p-3 bg-pink-900/50 rounded-sm shadow-lg text-sm font-medium text-pink-300 border border-pink-800">
+                    КОНТРАКТ: Арт-Инсталляция</div>
+                <div
+                    class="p-3 bg-cyan-900/50 rounded-sm shadow-lg text-sm font-medium text-cyan-300 border border-cyan-800">
+                    КОНТРАКТ: SMM-Мемы</div>
+                <div
+                    class="p-3 bg-yellow-900/50 rounded-sm shadow-lg text-sm font-medium text-yellow-300 border border-yellow-800">
+                    КОНТРАКТ: Настольные Игры</div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-lg text-gray-400">Твой выбор не ограничен. Больше Контрактов ждет тебя в Досье.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 5. Протокол Доступа (Форма опроса) -->
+    <section id="intake" class="py-16 bg-gray-800 shadow-inner border-t border-gray-700">
+        <div class="max-w-5xl mx-auto px-3">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-neon uppercase">
+                ПРОТОКОЛ: СТАРТ ТВОЕЙ МИССИИ
+            </h2>
+            <p class="text-center text-lg text-gray-400 mb-8 font-light">
+                Заполни свое Досье. Выбери Отряд и Контракты, которые тебя интересуют.
+            </p>
+
+            <!-- Контейнер для Google Формы -->
+            <div class="bg-gray-900 rounded-xl shadow-2xl form-container">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSd2vX9T2dtyBIGyt5ncJHU2SJovOEt41XWDrkSA6QC8XF1JpQ/viewform?embedded=true"
+                    class="hide-scrollbar" width="100%" height="100%" frameborder="0" marginheight="0"
+                    marginwidth="0">Загрузка…</iframe>
+                <!-- КОНЕЦ ПЛЕЙСХОЛДЕРА -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Футер -->
+    <footer class="bg-black text-gray-500 py-8 mt-12 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-6 text-center text-sm font-light">
+            [ЛОКАЦИЯ: TOP IT COLLEGE] | &copy; 2077 СЕТЬ. | БЕЗ ПРАВА НА ОШИБКУ.
+        </div>
+    </footer>
+
+</body>
+
+</html>
